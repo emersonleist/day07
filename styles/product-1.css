@@ -108,8 +108,9 @@ a.site-name {
 	font-size: 1.75rem;
 	color: #282828;
 	text-decoration: none;
-	display: block;
 	margin: 0 auto;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .site-navigation {
