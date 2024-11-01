@@ -142,10 +142,10 @@ a.site-name {
 @media (min-width: 50em) {
 
 	.site-header {
-		position: fixed;
-		margin-bottom: 2rem;
-		width: 100%;
+		position: sticky;
+		top: 0;
 		padding: 0 4rem;
+		z-index: 30;
 	}
 
 	.site-navigation {
@@ -185,15 +185,16 @@ a.site-name {
 @media (min-width: 50em) {
 
 	.site-main {
+		margin: 1rem auto 0;
 		display: flex;
 	}
 
 	.col-right {
-		margin-top: 8rem;
+		width: 25%;
 	}
 	
 	.col-left {
-		margin-top: 8rem;
+		width: 75%;
 	}
 
 }
