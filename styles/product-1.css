@@ -114,7 +114,10 @@ a.site-name {
 }
 
 .site-navigation {
-	
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
 
 .site-navigation ul {
@@ -139,17 +142,22 @@ a.site-name {
 @media (min-width: 50em) {
 
 	.site-header {
-		
+		position: fixed;
+		margin-bottom: 2rem;
+		width: 100%;
+		padding: 0 4rem;
 	}
 
 	.site-navigation {
+		position: sticky;
 		padding: 0 1rem;
 		flex: 1 1 auto;
-
+		
 	}
 
+
 	.site-navigation ul {
-		
+		justify-content: right;
 	}
 
 	.site-navigation a {
@@ -177,15 +185,15 @@ a.site-name {
 @media (min-width: 50em) {
 
 	.site-main {
-		
+		display: flex;
 	}
 
 	.col-right {
-
+		margin-top: 8rem;
 	}
 	
 	.col-left {
-
+		margin-top: 8rem;
 	}
 
 }
